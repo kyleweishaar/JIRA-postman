@@ -17,11 +17,12 @@ var schema = {
     password: {
       hidden: true
     },
-    JIRA_label: {
+    // for old label 
+   /* JIRA_label: {
       pattern: /^[/^\S*$/]+$/,
       message: 'No spcaes, underscore/hyphen OK',
       required: true
-    },
+    },*/
     epic_name: {
       required: true
     },
@@ -42,7 +43,7 @@ prompt.start();
   console.log('Thanks!');
 
   // Save the input
-  lb = result.JIRA_label;
+  // lb = result.JIRA_label;
   dc = result.epic_desc;
   en = result.epic_name; 
   un = result.trigram;
@@ -50,7 +51,7 @@ prompt.start();
   dd = result.due_date;
  
   //pass input to environment json
-  file.values[0].value = lb;
+  // file.values[0].value = lb;
   file.values[1].value = dc;
   file.values[2].value = en;
   file.values[3].value = un;
