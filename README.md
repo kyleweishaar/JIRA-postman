@@ -43,11 +43,7 @@ This should remove this specific file from the git index, so even when the file 
     $ npm install
     ```
 
-### Folder structure
-
-You can ignore most of what's in here. Click on one of the batch files to run the script.
-
-![folder](src/images/folders.png)
+### JIRA reports
 
 - Reports are saved to `newman`. You can delete these files if not needed. The script will create a new folder if not there.
 
