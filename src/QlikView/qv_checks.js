@@ -1,9 +1,10 @@
 var fs = require('fs');
 var prompt = require('prompt');
-var fileName = '/git/JIRA-postman/source/globals/MS_env.json';
+var fileName = '/git/JIRA-postman/src/globals/MS_env.json';
 var file = require(fileName);
 var exec = require('child_process').exec,child;
-
+var btoa = require('btoa');
+var atob = require('atob');
 
 // Start the prompt
 var schema = {
@@ -16,8 +17,8 @@ var schema = {
     password: {
       hidden: true
     },
-    // This prompted user for jira label -- no longer needed 
-    /*JIRA_label: {                 
+    // old prompt for label
+   /* JIRA_label: {
       pattern: /^[/^\S*$/]+$/,
       message: 'No spcaes, underscore/hyphen OK',
       required: true
@@ -42,7 +43,7 @@ prompt.start();
   console.log('Thanks!');
 
   // Save the input
-  // lb = result.JIRA_label; old var for the label 
+  // lb = result.JIRA_label; old variable for label
   dc = result.epic_desc;
   en = result.epic_name; 
   un = result.trigram;
@@ -50,7 +51,7 @@ prompt.start();
   dd = result.due_date;
  
   //pass input to environment json
-  // file.values[0].value = lb; old for label 
+  // file.values[0].value = lb; 
   file.values[1].value = dc;
   file.values[2].value = en;
   file.values[3].value = un;
@@ -63,7 +64,7 @@ fs.writeFile(fileName, JSON.stringify(file, null, 2), function (err) {
 });
 
 // run the newman script and log errors
-child = exec('node source/NPrinting/runNewman.js {{args}}',
+child = exec('node src/QlikView/qv_runNewman.js {{args}}',
   function (error, stdout, stderr) {
     console.log(stdout);
     console.log(stderr);

@@ -53,21 +53,15 @@ You can ignore most of what's in here. Click on one of the batch files to run th
 
 ## Usage
 
-To run the script, double-click the batch file:
-
-1. `NP_checks` for NPrinting.
-
-1. `Sense_checks` for Sense.
-
-1. `QV_checks` for QlikView.
+To run the script, double-click the `start` batch file and follow the prompt.
 
 The batch file opens a cmd shell. Enter the details as prompted.
+
+- Select which quality checks you want to build.
 
 - trigram = Qlik trigram
 
 - password = JIRA password (usually the same as your Qlik login password)
-
-- JIRA label = product_MS_Checks
 
 - epic title = product MS Checks
 

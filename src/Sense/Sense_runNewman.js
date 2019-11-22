@@ -2,7 +2,7 @@
 var fs = require('fs'),
 newman = require('newman');
 
-let rawdata = fs.readFileSync('source/Sense/Sense_options.json');
+let rawdata = fs.readFileSync('src/Sense/Sense_options.json');
 let optionsJson = JSON.parse(rawdata);
 //console.log(optionsJson);
 
