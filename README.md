@@ -2,8 +2,8 @@
 
 A script to build JIRA tasks using postman collections and Newman.
 
-<img src="source/images/postman.png" display="inline-block" width="100px" height="auto">
-<img src="source/images/jira.png" display="inline-block" width="100px" height="auto">
+<img src="src/images/postman.png" display="inline-block" width="100px" height="auto">
+<img src="src/images/jira.png" display="inline-block" width="100px" height="auto">
 
 ## Note about passwords
 
@@ -43,11 +43,7 @@ This should remove this specific file from the git index, so even when the file 
     $ npm install
     ```
 
-### Folder structure
-
-You can ignore most of what's in here. Click on one of the batch files to run the script.
-
-![folder](source/images/folders.png)
+### JIRA reports
 
 - Reports are saved to `newman`. You can delete these files if not needed. The script will create a new folder if not there.
 
@@ -73,7 +69,7 @@ The batch file opens a cmd shell. Enter the details as prompted.
 
 After the program runs, you'll get a confirmation message and a status report opens in your browser.
 
-![report](source/images/report.png)
+![report](src/images/report.png)
 
 Click the first green bar at the top of the page to expand it. In the reponse body you'll see the epic JIRA number. All JIRA tasks are nested under that. If there are errors, the bar(s) appear red. Expand the bar to see the error code and use Google to search for JIRA error code values.
 
