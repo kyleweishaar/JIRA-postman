@@ -8,9 +8,9 @@ ECHO 3. NPrinting
 set choice=
 set /p choice=Which quality checks do you want to run? Select a number then press Enter.
 if not '%choice%'=='' set choice=%choice:~0,1%
-if '%choice%'=='1' "source/Sense/Sense_checks.bat"
-if '%choice%'=='2' "source/QlikView/QV_checks.bat"
-if '%choice%'=='3' "source/NPrinting/NP_checks.bat"
+if '%choice%'=='1' "src/Sense/Sense_checks.bat"
+if '%choice%'=='2' "src/QlikView/QV_checks.bat"
+if '%choice%'=='3' "src/NPrinting/NP_checks.bat"
 ECHO "%choice%" is not valid, try again
 pause
 ECHO.
