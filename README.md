@@ -12,7 +12,7 @@ When you run the batch file, you are prompted to enter `password` and `username`
 Before you run the script for the first time, run this:
 
 ```bash
-git update-index --assume-unchanged source/globals/MS_env.json
+git update-index --assume-unchanged src/globals/MS_env.json
 ```
 
 This should remove this specific file from the git index, so even when the file changes, git won't ask you to push.
