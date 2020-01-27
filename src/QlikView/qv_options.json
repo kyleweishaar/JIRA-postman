@@ -4,5 +4,5 @@
     "globals": "src/globals/MS_globals.json",
     "iterationCount": 1,
     "reporters": "html",
-    "reporter": { "html": {"template": "source/template/custom.hbs"} }
+    "reporter": { "html": {"template": "src/template/custom.hbs"} }
 }
