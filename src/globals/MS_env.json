@@ -1,0 +1,45 @@
+{
+  "id": "4642fb73-0f39-4986-aefa-a821168fe55b",
+  "name": "Milestone checks",
+  "values": [
+    {
+      "key": "label",
+      "value": "nolabel",
+      "enabled": true,
+      "type": "text"
+    },
+    {
+      "key": "desc",
+      "value": "TEST",
+      "enabled": true,
+      "type": "text"
+    },
+    {
+      "key": "epic_name",
+      "value": "TEST",
+      "enabled": true,
+      "type": "text"
+    },
+    {
+      "key": "username",
+      "value": "xxx",
+      "enabled": true,
+      "type": "text"
+    },
+    {
+      "key": "password",
+      "value": "xxx",
+      "enabled": true,
+      "type": "text"
+    },
+    {
+      "key": "date",
+      "value": "NOW",
+      "enabled": true,
+      "type": "text"
+    }
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2018-05-17T13:50:43.506Z",
+  "_postman_exported_using": "Postman/6.0.10"
+}

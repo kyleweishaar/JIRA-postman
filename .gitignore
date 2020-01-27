@@ -11,10 +11,6 @@
 # List ignore file below
 ##########################################
 
-
-
-globals
-
 MS_env
 
 node_modules/

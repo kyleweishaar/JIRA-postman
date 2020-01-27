@@ -1,0 +1,21 @@
+{
+  "id": "5beab4a1-402c-4a70-8645-1bdea3cd3370",
+  "values": [
+    {
+      "key": "epic_num",
+      "value": "-",
+      "enabled": true,
+      "type": "text"
+    },
+    {
+      "key": "issue_id",
+      "value": "227525",
+      "enabled": true,
+      "type": "text"
+    }
+  ],
+  "name": "My Workspace Globals",
+  "_postman_variable_scope": "globals",
+  "_postman_exported_at": "2018-05-16T19:49:25.425Z",
+  "_postman_exported_using": "Postman/6.0.10"
+}
