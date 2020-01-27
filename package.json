@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "This package will create the releavant JIRAs for MS checks.",
   "main": "X_checks.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kyleweishaar/JIRA-postman"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +15,7 @@
   "dependencies": {
     "atob": "^2.1.2",
     "btoa": "^1.2.1",
-    "newman": "^3.10.0",
+    "newman": "^4.5.7",
     "prompt": "^1.0.0"
   }
 }
