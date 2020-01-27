@@ -1,7 +1,7 @@
 {
-    "collection": "source/NPrinting/NP_MS_checks.json",
-    "environment": "source/globals/MS_env.json",
-    "globals": "source/globals/MS_globals.json",
+    "collection": "src/NPrinting/NP_MS_checks.json",
+    "environment": "src/globals/MS_env.json",
+    "globals": "src/globals/MS_globals.json",
     "iterationCount": 1,
     "reporters": "html",
     "reporter": { "html": {"template": "source/template/custom.hbs"} }
